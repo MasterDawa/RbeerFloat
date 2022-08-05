@@ -1,0 +1,111 @@
+<meta property="og:image" content="ly0PZxF.png" />
+<meta name="description" content="Stake BNB, Earn BNB. Up to 8% Daily"/>
+<!DOCTYPE html>
+<html lang="en">
+    <link href="media/bnbfarmer.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="media/bnbfarmer.ico" rel="apple-touch-icon">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Root : Beer Float</title>
+    <link rel="stylesheet" href="App.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/lib/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="app">
+    <div class="app__nav">
+        <img class="app__logo" src="media/bnbfarmerfull.png" alt="bnbfarmer Logo"/>
+    </div>
+    <div class="app__main">
+        <button class="app__walletconnect" onclick="Connect()" id="connect-btn1">Connect</button>
+  <!--      <h2 style="color: white;">bnbfarmer <span id="countdown"></span></h2>
+        <br>-->
+        <div class="app__interact">
+            <div class="app__interactmargin">
+                <div class="app__interactstats">
+                    <div class="app__interactstatsdata">
+                        <p>Contract</p>
+                        <h5 id="contractBalance">0 BNB</h5>
+                    </div>
+                    <div class="app__interactstatsdata">
+                        <p>Wallet</p>
+                        <h5 id="walletBalance">0 BNB</h5>
+                    </div>
+                    <div class="app__interactstatsdata">
+                        <p>Farmers</p>
+                        <h5 id="frmrs">0 Farmers</h5>
+                    </div>
+                </div>
+                <div class="app__inputcontainer">
+                    <input class="app__inputbnb" type="number" id="app__inputbnb" />
+                    <div class="app__inputbnbsymbol"><p>BNB</p></div>
+                </div>
+                <button class="app__minebtn" onclick="stakeBNB()">Hire Farmers</button>
+                <div class="app__divider"></div>
+                <div class="app__interactstatsreward">
+                    <p>Your Rewards</p>
+                    <h5 id="yourRewards">0 BNB</h5>
+                </div>
+                <div class="app__rewards">
+                    <button class="app__rewardsbtn" onclick="compound()">Re-Hire</button>
+                    <button class="app__rewardsbtn" onclick="sellFarmers()">Claim</button>
+                </div>
+            </div>
+        </div>
+        <div class="app__statistics">
+            <div class="app__statisticsmargin">
+                <h5 class="app__statisticshead">Statistics</h5>
+                <div class="app__statisticsdivider"></div>
+                <div class="app__statisticsinfo">
+                    <p>Daily Return</p>
+                    <p>8%</p>
+                </div>
+                <div class="app__statisticsinfo">
+                    <p>APR</p>
+                    <p>2920%</p>
+                </div>
+                <div class="app__statisticsinfo">
+                    <p>Deposit Fee</p>
+                    <p>2.5%</p>
+                </div>
+                <div class="app__statisticsinfo">
+                    <p>Treasury Fee</p>
+                    <p>2.5%</p>
+                </div>
+            </div>
+        </div>
+        <div class="app__referral">
+            <h5>Referral Link & Tokenomics</h5>
+            <input class="app__referralinput" id="refString" type="text" readOnly value="Connect Wallet to get your referral link"/>
+            <br>
+            <div class="app__Tokenomics"> <p>Earn 12% of the BNB used to hire<br>farmers from anyone who uses your<br>referral link!<br>‍<br>The referral rewards are sent to your <br>pending rewards!<br>Please note: You can not unstake; <br>only withdraw earnings.<br>‍<br><strong>Tokenomics:<br>‍</strong><br>Rewards can be re-invested <br>& withdrawn daily.<br><br>In order to get the full 8%, <br>we recommend:<br>Compounding 6 Days/Week<br>Claim 1 Day/Week<br>‍<strong>‍</strong><br>The fees are in effect during <br>deposits and withdrawals, <br>not during compounding.<br>‍<br>Every Deposit/Withdrawal has a <br>base tax of 2.5%. <br>This is to ensure contract longevity, <br>as well as the Treasury Fee (listed below)<br><br>The 2.5% Treasury Fee is used to invest in <br>a variety of DeFi protocols to help provide <br>liquidity for the contract.</p>
+                <br>
+        </div>
+    </div>
+    <div class="app__socials">
+        <a href="https://discord.gg/address" target="_blank" rel="noreferrer" class="app__socialslinks"><img src="media/discord.png" alt="Discord" /></a>
+        <a href="https://docsdomain.example" target="_blank" rel="noreferrer" class="app__socialslinks"><img src="media/whitepaper1.png" alt="Whitepaper" /></a>
+        <a href="https://t.me/address" target="_blank" rel="noreferrer" class="app__socialslinks"><img src="media/telegram.png" alt="Telegram" /></a>
+    </div>
+</div>
+<script>
+    var countDownDate = new Date("Apr 15 2022 19:00:00 GMT+00:00").getTime();
+    var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("countdown").innerHTML = "opens in " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "is live now";
+        }
+    }, 1000);
+</script>
+</body>
+</html>

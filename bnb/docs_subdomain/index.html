@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+        />
+        <style>
+            html,
+            body {
+                -webkit-font-smoothing: antialiased;
+                text-rendering: optimizelegibility;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                user-select: none;
+                outline: none;
+            }
+            body.dragging * {
+                cursor: grabbing !important;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            *:focus,
+            *:hover {
+                outline: none;
+            }
+            .gitbook-root,
+            .gitbook-splashscreen {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                width: 100%;
+                height: 100%;
+            }
+            .slate-spacer {
+                height: 0;
+                color: transparent;
+                outline: none;
+                position: absolute;
+            }
+            @keyframes LoadingIndicator {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            [data-loading-indicator='true'] {
+                animation: LoadingIndicator 0.6s ease infinite;
+            }
+        </style>
+        <title>Disclaimer - bnbfarmer.io</title>
+<link rel="preload" as="font" type="font/woff2" href="../public/fonts/Inter/Inter-Bold.woff" >
+<link rel="preload" as="font" type="font/woff2" href="../public/fonts/Inter/Inter-BoldItalic.woff" >
+<link rel="preload" as="font" type="font/woff2" href="../public/fonts/Inter/Inter-ExtraBold.woff" >
+<link rel="preload" as="font" type="font/woff2" href="../public/fonts/Inter/Inter-ExtraBoldItalic.woff" >
+<link rel="preload" as="font" type="font/woff2" href="../public/fonts/Inter/Inter-Medium.woff" >
+<link rel="preload" as="font" type="font/woff2" href="../public/fonts/Inter/Inter-MediumItalic.woff" >
+<link rel="preload" as="font" type="font/woff2" href="../public/fonts/Inter/Inter-Regular.woff" >
+<link rel="preload" as="font" type="font/woff2" href="../public/fonts/Inter/Inter-Italic.woff" >
+        <style id="__font-Inter-gitbook-content-font">
+            @font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  normal;
+            font-weight: 700;
+            font-display: swap;
+            src: local("Inter Bold"), local("Inter-Bold"), url("../public/fonts/Inter/Inter-Bold.woff") format("woff2"),
+                    url("../public/fonts/Inter/Inter-Bold.woff") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  italic;
+            font-weight: 700;
+            font-display: swap;
+            src: local("Inter BoldItalic"), local("Inter-BoldItalic"), url("../public/fonts/Inter/Inter-BoldItalic.woff") format("woff2"),
+                    url("../public/fonts/Inter/Inter-BoldItalic.woff") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  normal;
+            font-weight: 800;
+            font-display: swap;
+            src: local("Inter ExtraBold"), local("Inter-ExtraBold"), url("../public/fonts/Inter/Inter-ExtraBold.woff") format("woff2"),
+                    url("../public/fonts/Inter/Inter-ExtraBold.woff") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  italic;
+            font-weight: 800;
+            font-display: swap;
+            src: local("Inter ExtraBoldItalic"), local("Inter-ExtraBoldItalic"), url("../public/fonts/Inter/Inter-ExtraBoldItalic.woff") format("woff2"),
+                    url("../public/fonts/Inter/Inter-ExtraBoldItalic.woff") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  normal;
+            font-weight: 500;
+            font-display: swap;
+            src: local("Inter Medium"), local("Inter-Medium"), url("../public/fonts/Inter/Inter-Medium.woff") format("woff2"),
+                    url("../public/fonts/Inter/Inter-Medium.woff") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  italic;
+            font-weight: 500;
+            font-display: swap;
+            src: local("Inter MediumItalic"), local("Inter-MediumItalic"), url("../public/fonts/Inter/Inter-MediumItalic.woff") format("woff2"),
+                    url("../public/fonts/Inter/Inter-MediumItalic.woff") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  normal;
+            font-weight: 400;
+            font-display: swap;
+            src: local("Inter Regular"), local("Inter-Regular"), url("../public/fonts/Inter/Inter-Regular.woff") format("woff2"),
+                    url("../public/fonts/Inter/Inter-Regular.woff") format("woff");
+        }
+@font-face {
+            font-family: 'gitbook-content-font';
+            font-style:  italic;
+            font-weight: 400;
+            font-display: swap;
+            src: local("Inter Italic"), local("Inter-Italic"), url("../public/fonts/Inter/Inter-Italic.woff") format("woff2"),
+                    url("../public/fonts/Inter/Inter-Italic.woff") format("woff");
+        }
+        </style>
+<meta name="description" content="Please read the disclaimer below before proceeding!" id="__meta-description" />
+<meta name="og:description" content="Please read the disclaimer below before proceeding!" id="__meta-og:description" />
+<meta name="og:image" content="https://app.gitbook.com/share/space/thumbnail/a3vNIresE1y5ZNLGwo8X.png?color=&logo=https%3A%2F%2F97799430-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252Fa3vNIresE1y5ZNLGwo8X%252Ficon%252FMypH43mBJij3wiKZSO13%252Fbnbfarmer256.png%3Falt%3Dmedia%26token%3D1a75a615-c960-4df3-b161-d05528e3289c&theme=" id="__meta-og:image" />
+<meta name="twitter:card" content="summary_large_image" id="__meta-twitter:card" />
+<meta name="og:title" content="Disclaimer" id="__meta-og:title" />
+<meta name="twitter:site" content="bnbfarmer.io" id="__meta-twitter:site" />
+<meta name="robots" content="noindex, nofollow" id="__meta-robots" />
+<link rel="icon" href="../images/MypH43mBJij3wiKZSO13/bnbfarmer256.png"  id="__link-icon" />
+<link rel="stylesheet" href="../public/emojis/emoji-assets-sprite.css" type="text/css" media="all" />
+                <script type="module" defer src="../public/app/public-NL7AU6BR.min.js"></script>
+            <style id="react-native-stylesheet">[stylesheet-group="0"]{}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+body{margin:0;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+input::-webkit-search-cancel-button,input::-webkit-search-decoration,input::-webkit-search-results-button,input::-webkit-search-results-decoration{display:none;}
+[stylesheet-group="0.1"]{}
+:focus:not([data-focusvisible-polyfill]){outline: none;}
+[stylesheet-group="0.5"]{}
+.css-4rbku5{background-color:rgba(0,0,0,0.00);color:inherit;font:inherit;list-style:none;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;text-align:inherit;text-decoration:none;}
+[stylesheet-group="1"]{}
+.css-1dbjc4n{-ms-flex-align:stretch;-ms-flex-direction:column;-ms-flex-negative:0;-ms-flex-preferred-size:auto;-webkit-align-items:stretch;-webkit-box-align:stretch;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-basis:auto;-webkit-flex-direction:column;-webkit-flex-shrink:0;align-items:stretch;border:0 solid black;box-sizing:border-box;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;flex-basis:auto;flex-direction:column;flex-shrink:0;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;min-height:0px;min-width:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;position:relative;z-index:0;}
+.css-901oao{border:0 solid black;box-sizing:border-box;color:rgba(0,0,0,1.00);display:inline;font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;white-space:pre-wrap;word-wrap:break-word;}
+.css-vcwn7f{max-width:100%;overflow-x:hidden;overflow-y:hidden;text-overflow:ellipsis;white-space:pre;}
+.css-16my406{color:inherit;font:inherit;white-space:inherit;}
+[stylesheet-group="2"]{}
+.r-13awgt0{-ms-flex:1 1 0%;-webkit-flex:1;flex:1;}
+.r-42olwf{border-bottom-color:rgba(0,0,0,0.00);border-left-color:rgba(0,0,0,0.00);border-right-color:rgba(0,0,0,0.00);border-top-color:rgba(0,0,0,0.00);}
+.r-rs99b7{border-bottom-width:1px;border-left-width:1px;border-right-width:1px;border-top-width:1px;}
+.r-z2wwpe{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-top-left-radius:4px;border-top-right-radius:4px;}
+.r-18c69zk{border-bottom-left-radius:100px;border-bottom-right-radius:100px;border-top-left-radius:100px;border-top-right-radius:100px;}
+.r-1udh08x{overflow-x:hidden;overflow-y:hidden;}
+.r-156hn8l{border-bottom-color:rgba(211,220,228,1.00);border-left-color:rgba(211,220,228,1.00);border-right-color:rgba(211,220,228,1.00);border-top-color:rgba(211,220,228,1.00);}
+.r-4qtqp9{display:inline-block;}
+.r-1xc7w19{border-bottom-color:rgba(0,0,0,1.00);border-left-color:rgba(0,0,0,1.00);border-right-color:rgba(0,0,0,1.00);border-top-color:rgba(0,0,0,1.00);}
+.r-1phboty{border-bottom-style:solid;border-left-style:solid;border-right-style:solid;border-top-style:solid;}
+.r-1yadl64{border-bottom-width:0px;border-left-width:0px;border-right-width:0px;border-top-width:0px;}
+.r-6koalj{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}
+.r-crgep1{margin-bottom:0px;margin-left:0px;margin-right:0px;margin-top:0px;}
+.r-t60dpp{padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;}
+.r-190qawg{border-bottom-color:rgba(227,232,237,1.00);border-left-color:rgba(227,232,237,1.00);border-right-color:rgba(227,232,237,1.00);border-top-color:rgba(227,232,237,1.00);}
+.r-nsbfu8{padding-bottom:16px;padding-left:16px;padding-right:16px;padding-top:16px;}
+[stylesheet-group="2.1"]{}
+.r-ymttw5{padding-left:16px;padding-right:16px;}
+.r-mk0yit{padding-left:0px;padding-right:0px;}
+.r-1e081e0{padding-left:12px;padding-right:12px;}
+.r-1pn2ns4{padding-left:8px;padding-right:8px;}
+.r-1yzf0co{padding-bottom:16px;padding-top:16px;}
+.r-5njf8e{padding-bottom:8px;padding-top:8px;}
+.r-pw2am6{margin-bottom:24px;margin-top:24px;}
+.r-1h4fu65{padding-bottom:24px;padding-top:24px;}
+.r-1guathk{padding-left:24px;padding-right:24px;}
+.r-oyd9sg{padding-bottom:4px;padding-top:4px;}
+[stylesheet-group="2.2"]{}
+.r-12vffkv>*{pointer-events:auto;}
+.r-12vffkv{pointer-events:none!important;}
+.r-14lw9ot{background-color:rgba(255,255,255,1.00);}
+.r-1d9grui{border-bottom-color:rgba(211,220,228,1.00);}
+.r-qklmqi{border-bottom-width:1px;}
+.r-1i7sdiz{box-shadow:0px 4px 10px rgba(0,0,0,0.05);}
+.r-1quu1zo{;}
+.r-184en5c{z-index:1;}
+.r-18u37iz{-ms-flex-direction:row;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;flex-direction:row;}
+.r-1awozwy{-ms-flex-align:center;-webkit-align-items:center;-webkit-box-align:center;align-items:center;}
+.r-eafdt9{-webkit-transition-duration:0.15s;transition-duration:0.15s;}
+.r-1i6wzkk{-moz-transition-property:opacity;-webkit-transition-property:opacity;transition-property:opacity;}
+.r-lrvibr{-moz-user-select:none;-ms-user-select:none;-webkit-user-select:none;user-select:none;}
+.r-1loqt21{cursor:pointer;}
+.r-1otgn73{-ms-touch-action:manipulation;touch-action:manipulation;}
+.r-18kxxzh{-ms-flex-positive:0;-webkit-box-flex:0;-webkit-flex-grow:0;flex-grow:0;}
+.r-1777fci{-ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;}
+.r-1ny4l3l{outline-style:none;}
+.r-eu3ka{height:40px;}
+.r-1bnj018{color:rgba(92,105,117,1.00);}
+.r-1kb76zh{margin-right:8px;}
+.r-1aockid{width:40px;}
+.r-h7gdob{color:currentColor;}
+.r-11vxtcu{background-color:rgba(211,220,228,1.00);}
+.r-92ng3h{width:1px;}
+.r-1ro0kt6{-ms-flex-preferred-size:0%;-webkit-flex-basis:0%;flex-basis:0%;}
+.r-16y2uox{-ms-flex-positive:1;-webkit-box-flex:1;-webkit-flex-grow:1;flex-grow:1;}
+.r-1wbh5a2{-ms-flex-negative:1;-webkit-flex-shrink:1;flex-shrink:1;}
+.r-1habvwh{-ms-flex-align:start;-webkit-align-items:flex-start;-webkit-box-align:start;align-items:flex-start;}
+.r-puj83k{padding-left:24px;}
+.r-1pyaxff{padding-right:8px;}
+.r-mabqd8{height:32px;}
+.r-1jkjb{margin-left:8px;}
+.r-gg6oyi{font-family:gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;}
+.r-1b43r93{font-size:14px;}
+.r-16dba41{font-weight:400;}
+.r-hbpseb{line-height:22px;}
+.r-homxoj{color:inherit;}
+.r-1yvhtrz{width:32px;}
+.r-1vckr1u{background-color:rgba(245,247,249,1.00);}
+.r-g8m1yf{border-right-color:rgba(211,220,228,1.00);}
+.r-13l2t4g{border-right-width:1px;}
+.r-17s6mgv{-ms-flex-pack:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end;}
+.r-1ipicw7{width:300px;}
+.r-eqz5dr{-ms-flex-direction:column;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;flex-direction:column;}
+.r-4dj0k7{box-shadow:0px 1px 2px rgba(0,0,0,0.12);}
+.r-sga3zk{height:64px;}
+.r-1kihuf0{-ms-flex-item-align:center;-ms-grid-row-align:center;-webkit-align-self:center;align-self:center;}
+.r-150rngu{-webkit-overflow-scrolling:touch;}
+.r-11yh6sk{overflow-x:hidden;}
+.r-1rnoaur{overflow-y:auto;}
+.r-1sncvnh{-webkit-transform:translateZ(0px);transform:translateZ(0px);}
+.r-1sc18lr{padding-bottom:88px;}
+.r-1p0dtai{bottom:0px;}
+.r-u8s1d{position:absolute;}
+.r-13qz1uu{width:100%;}
+.r-10ptun7{height:16px;}
+.r-1l7z4oj{padding-bottom:16px;}
+.r-1b00too{background-color:rgba(236,239,241,1.00);}
+.r-1rasi3h{color:rgba(136,153,168,1.00);}
+.r-1qhn6m8{padding-left:16px;}
+.r-b88u0q{font-weight:700;}
+.r-15ysp7h{min-height:32px;}
+.r-12zb1j4{margin-right:7px;}
+.r-6wscbn{max-width:252px;}
+.r-1h0z5md{-ms-flex-pack:start;-webkit-box-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;}
+.r-88pszg{margin-right:16px;}
+.r-1mlwlqe{-ms-flex-preferred-size:auto;-webkit-flex-basis:auto;flex-basis:auto;}
+.r-417010{z-index:0;}
+.r-1niwhzg{background-color:rgba(0,0,0,0.00);}
+.r-vvn4in{background-position:center;}
+.r-u6sd8q{background-repeat:no-repeat;}
+.r-4gszlv{background-size:cover;}
+.r-1pi2tsx{height:100%;}
+.r-1d2f490{left:0px;}
+.r-zchlnj{right:0px;}
+.r-ipm5af{top:0px;}
+.r-1wyyakw{z-index:-1;}
+.r-ehq7j7{background-size:contain;}
+.r-bnwqim{position:relative;}
+.r-1ghhsy9{color:rgba(52,109,219,1.00);}
+.r-8jnfel{min-height:-webkit-min-content;min-height:-moz-min-content;min-height:min-content;}
+.r-1l5ssaz{max-width:910px;}
+.r-1ygmrgt{padding-top:24px;}
+.r-1ifxtd0{margin-bottom:16px;}
+.r-1nf4jbm{color:rgba(59,69,78,1.00);}
+.r-1xnzce8{-moz-user-select:-webkit-text;-moz-user-select:text;-ms-user-select:-webkit-text;-ms-user-select:text;-webkit-user-select:-webkit-text;-webkit-user-select:text;user-select:-webkit-text;user-select:text;}
+.r-1wzrnnt{margin-top:16px;}
+.r-ubezar{font-size:16px;}
+.r-135wba7{line-height:24px;}
+.r-nzcix3{border-bottom-color:rgba(227,232,237,1.00);}
+.r-11c0sde{margin-top:24px;}
+.r-1dqbpge{cursor:-webkit-text;cursor:text;}
+.r-1sdbnja{top:-40px;}
+.r-1oszu61{-ms-flex-align:stretch;-webkit-align-items:stretch;-webkit-box-align:stretch;align-items:stretch;}
+.r-deolkf{box-sizing:border-box;}
+.r-1q142lx{-ms-flex-negative:0;-webkit-flex-shrink:0;flex-shrink:0;}
+.r-ifefl9{min-height:0px;}
+.r-bcqeeo{min-width:0px;}
+.r-95jzfe{padding-top:16px;}
+.r-119zq30{border-left-width:4px;}
+.r-11g3r6m{padding-right:24px;}
+.r-rwqe4o{width:48px;}
+.r-iphfwy{padding-bottom:4px;}
+.r-fdjqy7{text-align:left;}
+.r-1h8ys4a{padding-top:4px;}
+.r-1p5i0ed{bottom:-24px;}
+.r-1472mwg{height:24px;}
+.r-1enofrn{font-size:12px;}
+.r-14yzgew{line-height:18px;}
+.r-majxgm{font-weight:500;}
+.r-1ow6zhx{margin-left:16px;}
+.r-1yv4afn{border-top-color:rgba(227,232,237,1.00);}
+.r-5kkj8d{border-top-width:1px;}
+.r-1wtj0ep{-ms-flex-pack:justify;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
+.r-k200y{-ms-flex-item-align:start;-webkit-align-self:flex-start;align-self:flex-start;}
+.r-icyqz7{max-height:calc(100vh - 88px);}
+.r-gtdqiz{position:-webkit-sticky;position:sticky;}
+.r-eqo98v{top:24px;}
+.r-1mkpi1y{max-width:max(50%, 300px);}
+.r-dvzwsg{border-left-color:rgba(211,220,228,1.00);}
+.r-1ljd8xs{border-left-width:1px;}
+.r-hu79xy{min-width:196px;}
+.r-1peese0{margin-bottom:24px;}
+.r-xd6kpl{padding-bottom:8px;}
+.r-tskmnb{padding-top:8px;}
+.r-wk8lta{padding-top:0px;}
+.r-1mdbw0j{padding-bottom:0px;}
+.r-dnmrzs{max-width:100%;}
+.r-7xmw5f{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;}
+[stylesheet-group="10"]{}
+[data-rnw-media-class="1571__1572"]{ height:80px;}
+@media (max-width: 700px) and (max-width: 9999999.49535549959549535550px) { [data-rnw-media-class="1571__1572"] { height:64px;} }
+[data-rnw-media-class="visible__hidden"]{display: none;}
+@media (max-width: 700px) and (max-width: 9999999.118105115105981081019595104105100100101110px) { [data-rnw-media-class="visible__hidden"] {display: flex;} }
+[data-rnw-media-class="hidden__visible"]{display: flex;}
+@media (max-width: 700px) and (max-width: 9999999.104105100100101110959511810511510598108101px) { [data-rnw-media-class="hidden__visible"] {display: none;} }
+[data-rnw-media-class="_visible_hidden"]{display: none;}
+@media (max-width: 1024px) and (max-width: 9999999.951181051151059810810195104105100100101110px) { [data-rnw-media-class="_visible_hidden"] {display: flex;} }
+[data-rnw-media-class="_hidden_1570"]{ padding-left:64px;padding-right:64px;}
+@media (max-width: 1024px) and (max-width: 9999999.951041051001001011109549535548px) { [data-rnw-media-class="_hidden_1570"] {display: none;} }
+[data-rnw-media-class="1569__1kbfcbz"]{ width:max(220px, calc(100vw - max(300px, calc((100vw - 910px) / 2 - 0px)) - 750px - 80px - 80px - 0px));}
+@media (max-width: 700px) and (max-width: 9999999.49535457959549107981029998122px) { [data-rnw-media-class="1569__1kbfcbz"] { width:auto;} }
+[data-rnw-media-class="188__187"]{ -ms-flex-direction:row;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;flex-direction:row;}
+@media (max-width: 700px) and (max-width: 9999999.4956569595495655px) { [data-rnw-media-class="188__187"] { -ms-flex-direction:column;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;flex-direction:column;} }
+[data-rnw-media-class="hidden__visible_b1430-visible"]{display: flex;}
+@media (max-width: 1430px) and (max-width: 9999999.1041051001001011109595118105115105981081019598495251484511810511510598108101px) { [data-rnw-media-class="hidden__visible_b1430-visible"] {display: flex;} }
+@media (max-width: 700px) and (max-width: 9999999.1041051001001011109595118105115105981081019598495251484511810511510598108101px) { [data-rnw-media-class="hidden__visible_b1430-visible"] {display: none;} }
+[data-rnw-media-class="1584__1585"]{ border-right-width:0px;}
+@media (max-width: 700px) and (max-width: 9999999.49535652959549535653px) { [data-rnw-media-class="1584__1585"] { border-right-width:1px;} }
+[data-rnw-media-class="1569-95-196-__7mwae0-123-197"]{ -ms-flex-pack:end;-webkit-box-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end;padding-left:24px;padding-right:24px;width:max(300px, calc((100vw - 910px) / 2 - 0px));}
+@media (max-width: 700px) and (max-width: 9999999.49535457455753454957544595955510911997101484549505145495755px) { [data-rnw-media-class="1569-95-196-__7mwae0-123-197"] { -ms-flex-pack:start;-webkit-box-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;padding-left:0px;padding-right:0px;width:auto;} }
+[data-rnw-media-class="233__232"]{ font-family:gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;line-height:36px;}
+@media (max-width: 700px) and (max-width: 9999999.5051519595505150px) { [data-rnw-media-class="233__232"] { font-family:gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;line-height:24px;} }
+[data-rnw-media-class="1557__1556_b1430-195"]{ padding-right:80px;}
+@media (max-width: 1430px) and (max-width: 9999999.4953535595954953535495984952514845495753px) { [data-rnw-media-class="1557__1556_b1430-195"] { -ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;} }
+@media (max-width: 700px) and (max-width: 9999999.4953535595954953535495984952514845495753px) { [data-rnw-media-class="1557__1556_b1430-195"] { padding-right:16px;} }
+[data-rnw-media-class="1529__1530"]{ height:56px;width:80px;}
+@media (max-width: 700px) and (max-width: 9999999.49535057959549535148px) { [data-rnw-media-class="1529__1530"] { height:36px;min-width:16px;width:auto;} }
+[data-rnw-media-class="232__230"]{ font-family:gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:48px;font-weight:700;line-height:56px;}
+@media (max-width: 700px) and (max-width: 9999999.5051509595505148px) { [data-rnw-media-class="232__230"] { font-family:gitbook-content-font,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:24px;font-weight:700;line-height:36px;} }
+[data-rnw-media-class="visible__hidden_b1430-visible"]{display: none;}
+@media (max-width: 1430px) and (max-width: 9999999.1181051151059810810195951041051001001011109598495251484511810511510598108101px) { [data-rnw-media-class="visible__hidden_b1430-visible"] {display: flex;} }
+@media (max-width: 700px) and (max-width: 9999999.1181051151059810810195951041051001001011109598495251484511810511510598108101px) { [data-rnw-media-class="visible__hidden_b1430-visible"] {display: flex;} }
+[data-rnw-media-class="1532__1531"]{ margin-left:80px;}
+@media (max-width: 700px) and (max-width: 9999999.49535150959549535149px) { [data-rnw-media-class="1532__1531"] { margin-left:16px;} }
+[data-rnw-media-class="__127"]{ padding-bottom:40px;}
+[data-rnw-media-class="1491-195__1489-_b1430-195"]{ padding-right:80px;}
+@media (max-width: 1430px) and (max-width: 9999999.49525749454957539595495256574595984952514845495753px) { [data-rnw-media-class="1491-195__1489-_b1430-195"] { -ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;} }
+@media (max-width: 700px) and (max-width: 9999999.49525749454957539595495256574595984952514845495753px) { [data-rnw-media-class="1491-195__1489-_b1430-195"] { -ms-flex-pack:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;padding-right:16px;} }
+[data-rnw-media-class="1490-__1488"]{ margin-left:80px;}
+@media (max-width: 700px) and (max-width: 9999999.4952574845959549525656px) { [data-rnw-media-class="1490-__1488"] { margin-left:16px;} }
+[data-rnw-media-class="1560__1559"]{ margin-left:80px;}
+@media (max-width: 700px) and (max-width: 9999999.49535448959549535357px) { [data-rnw-media-class="1560__1559"] { margin-left:16px;} }
+[data-rnw-media-class="__187_b910-188"]{ -ms-flex-direction:row;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;flex-direction:row;}
+@media (max-width: 910px) and (max-width: 9999999.9595495655959857494845495656px) { [data-rnw-media-class="__187_b910-188"] { -ms-flex-direction:column;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;flex-direction:column;} }
+[data-rnw-media-class="_188_187"]{ -ms-flex-direction:row;-webkit-box-direction:normal;-webkit-box-orient:horizontal;-webkit-flex-direction:row;flex-direction:row;}
+@media (max-width: 1024px) and (max-width: 9999999.9549565695495655px) { [data-rnw-media-class="_188_187"] { -ms-flex-direction:column;-webkit-box-direction:normal;-webkit-box-orient:vertical;-webkit-flex-direction:column;flex-direction:column;} }
+@media (max-width: 1024px) and (max-width: 9999999.9549545095px) { [data-rnw-media-class="_162_"] { margin-bottom:16px;} }
+[data-rnw-media-class="hidden__1kbfcbz_b1430-hidden"]{ width:max(220px, calc(100vw - max(300px, calc((100vw - 910px) / 2 - 0px)) - 750px - 80px - 80px - 0px));}
+@media (max-width: 1430px) and (max-width: 9999999.10410510010010111095954910798102999812295984952514845104105100100101110px) { [data-rnw-media-class="hidden__1kbfcbz_b1430-hidden"] {display: none;} }
+@media (max-width: 700px) and (max-width: 9999999.10410510010010111095954910798102999812295984952514845104105100100101110px) { [data-rnw-media-class="hidden__1kbfcbz_b1430-hidden"] {display: none;} }
+[stylesheet-group="20"]{}
+body:not(.dragging) [data-rnw-int-class="button___760_"]:hover , body:not(.dragging) [data-rnw-int-class="button___760_"]:focus { background-color:rgba(245,247,249,1.00);}
+body:not(.dragging) [data-rnw-int-class="button___760_"]:hover [data-rnw-int-class="nearest___762_"], body:not(.dragging) [data-rnw-int-class="button___760_"]:focus [data-rnw-int-class="nearest___762_"]{ color:rgba(92,105,117,1.00);}
+body:not(.dragging) [data-rnw-int-class="button___629_"]:hover [data-rnw-int-class="nearest___630-29615_"], body:not(.dragging) [data-rnw-int-class="button___629_"]:focus [data-rnw-int-class="nearest___630-29615_"]{ color:rgba(52,109,219,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest___265-29621_"]:hover , body:not(.dragging) [data-rnw-int-class="nearest___265-29621_"]:focus { color:rgba(52,109,219,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest___265-29621_"]:hover [data-rnw-int-class="nearest___265-29621_"], body:not(.dragging) [data-rnw-int-class="nearest___265-29621_"]:focus [data-rnw-int-class="nearest___265-29621_"]{ color:rgba(52,109,219,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest__1586__"]:hover { background-color:rgba(236,239,241,1.00);}
+[data-rnw-int-class="nearest_249__265-29611_"]{ color:rgba(59,69,78,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest____"]:hover [data-rnw-int-class="nearest_249__265-29611_"], body:not(.dragging) [data-rnw-int-class="nearest____"]:focus [data-rnw-int-class="nearest_249__265-29611_"]{ color:rgba(52,109,219,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest___906-29625_"]:hover , body:not(.dragging) [data-rnw-int-class="nearest___906-29625_"]:focus { border-bottom-color:rgba(52,109,219,1.00);border-left-color:rgba(52,109,219,1.00);border-right-color:rgba(52,109,219,1.00);border-top-color:rgba(52,109,219,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest___906-29625_"]:hover [data-rnw-int-class="nearest___265-29611_"], body:not(.dragging) [data-rnw-int-class="nearest___906-29625_"]:focus [data-rnw-int-class="nearest___265-29611_"]{ color:rgba(52,109,219,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest___906-29625_"]:hover [data-rnw-int-class="nearest__265-29611__"]{ color:rgba(52,109,219,1.00);}
+body:not(.dragging) [data-rnw-int-class="nearest____"]:hover [data-rnw-int-class="nearest___265-29611_"], body:not(.dragging) [data-rnw-int-class="nearest____"]:focus [data-rnw-int-class="nearest___265-29611_"]{ color:rgba(52,109,219,1.00);}</style>
+        <script type="text/javascript" defer src="../embed.js" async></script>
+        <script
+            type="text/javascript"
+            defer
+            src="../v2/polyfill.js"
+            ></script>
+    </head>
+    <body>
+        <div class="gitbook-root"><div class="css-1dbjc4n r-13awgt0 r-12vffkv" data-reactroot=""><div class="css-1dbjc4n r-13awgt0 r-12vffkv"><div data-rnw-media-class="1571__1572" class="css-1dbjc4n r-1awozwy r-14lw9ot r-1d9grui r-qklmqi r-1i7sdiz r-1quu1zo r-18u37iz r-184en5c"><div aria-label="Show Table of Content" data-rnw-media-class="visible__hidden" data-rnw-int-class="button___760_" tabindex="0" class="css-1dbjc4n r-1awozwy r-42olwf r-18c69zk r-rs99b7 r-1bnj018 r-1loqt21 r-18u37iz r-18kxxzh r-eu3ka r-1777fci r-1kb76zh r-1ny4l3l r-mk0yit r-1otgn73 r-1i6wzkk r-lrvibr r-1aockid" style="-webkit-transition-duration:0s;transition-duration:0s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___762_" class="r-h7gdob" style="height:18px;vertical-align:middle;width:18px"><path d="M3 12h18M3 6h18M3 18h18"></path></svg></div><a href="../docs_subdomain/index.html" data-rnw-int-class="nearest____" data-rnw-media-class="1569-95-196-__7mwae0-123-197" class="css-4rbku5 css-1dbjc4n r-1awozwy r-1loqt21 r-18u37iz r-1otgn73 r-1i6wzkk r-lrvibr" style="-webkit-transition-duration:0s;transition-duration:0s" data-testid="public.headerHomeLink"><div class="css-1dbjc4n r-1awozwy r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-1h0z5md r-6wscbn"><div class="css-1dbjc4n"><div data-rnw-media-class="hidden__visible" class="css-1dbjc4n"><div class="css-1dbjc4n r-1awozwy r-z2wwpe r-18u37iz r-eu3ka r-1777fci r-88pszg r-1aockid" style="overflow-x:hidden;overflow-y:hidden"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1udh08x r-13qz1uu r-417010" style="height:100%"><div class="css-1dbjc4n r-1niwhzg r-vvn4in r-u6sd8q r-ehq7j7 r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw"></div></div></div></div><div data-rnw-media-class="visible__hidden" class="css-1dbjc4n"><div class="css-1dbjc4n r-1awozwy r-z2wwpe r-18u37iz r-1777fci r-88pszg r-1udh08x" style="height:24px;width:24px"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1pi2tsx r-1udh08x r-13qz1uu r-417010"><div class="css-1dbjc4n r-1niwhzg r-vvn4in r-u6sd8q r-ehq7j7 r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw"></div></div></div></div></div><div dir="auto" data-rnw-media-class="233__232" class="css-901oao"><span aria-label="bnbfarmer.io" data-rnw-int-class="nearest_249__265-29611_" class="css-901oao css-16my406 css-vcwn7f">bnbfarmer.io</span></div></div></a><div data-rnw-media-class="hidden__visible" class="css-1dbjc4n r-11vxtcu r-eu3ka r-92ng3h" style="margin-left:-1px"></div><div data-rnw-media-class="_visible_hidden" class="css-1dbjc4n r-1awozwy r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2"></div><div data-rnw-media-class="_hidden_1570" class="css-1dbjc4n r-1awozwy r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2"></div><div data-rnw-media-class="hidden__visible" class="css-1dbjc4n r-11vxtcu r-eu3ka r-92ng3h" style="margin-right:-1px"></div><div data-rnw-media-class="1569__1kbfcbz" class="css-1dbjc4n"><div class="css-1dbjc4n r-1habvwh r-1ro0kt6 r-16y2uox r-1wbh5a2 r-puj83k r-1pyaxff"><div data-rnw-media-class="hidden__visible" class="css-1dbjc4n"><div data-rnw-int-class="button___629_" tabindex="0" class="css-1dbjc4n r-1awozwy r-42olwf r-z2wwpe r-rs99b7 r-1bnj018 r-1loqt21 r-18u37iz r-18kxxzh r-mabqd8 r-1777fci r-1ny4l3l r-mk0yit r-1otgn73 r-1i6wzkk r-lrvibr" style="-webkit-transition-duration:0s;transition-duration:0s"><svg viewBox="0 0 24 24" fill="none" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___630-29615_" class="r-h7gdob" style="height:14px;vertical-align:middle;width:14px"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 4a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM2 10.5a8.5 8.5 0 1117 0 8.5 8.5 0 01-17 0z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.093 15.093a1 1 0 011.414 0l5.2 5.2a1 1 0 01-1.414 1.414l-5.2-5.2a1 1 0 010-1.414z" fill="currentColor"></path></svg><div class="css-1dbjc4n r-16y2uox r-1wbh5a2 r-1jkjb"><div dir="auto" data-rnw-int-class="nearest___630-29615_" class="css-901oao css-vcwn7f r-h7gdob r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb">Search…</div></div></div></div><div data-rnw-media-class="visible__hidden" class="css-1dbjc4n"><div data-rnw-int-class="button___629_" tabindex="0" class="css-1dbjc4n r-1awozwy r-42olwf r-z2wwpe r-rs99b7 r-1bnj018 r-1loqt21 r-18u37iz r-18kxxzh r-mabqd8 r-1777fci r-1ny4l3l r-mk0yit r-1otgn73 r-1i6wzkk r-lrvibr r-1yvhtrz" style="-webkit-transition-duration:0s;transition-duration:0s"><svg viewBox="0 0 24 24" fill="none" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___630-29615_" class="r-h7gdob" style="height:14px;vertical-align:middle;width:14px"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 4a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM2 10.5a8.5 8.5 0 1117 0 8.5 8.5 0 01-17 0z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.093 15.093a1 1 0 011.414 0l5.2 5.2a1 1 0 01-1.414 1.414l-5.2-5.2a1 1 0 010-1.414z" fill="currentColor"></path></svg></div></div></div></div></div><div data-rnw-media-class="188__187" class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2"><div data-rnw-media-class="hidden__visible_b1430-visible" class="css-1dbjc4n r-1vckr1u r-g8m1yf r-13l2t4g r-18u37iz r-17s6mgv" style="width:max(300px, calc((100vw - 910px) / 2 - 0px))" data-testid="page.desktopTableOfContents"><div class="css-1dbjc4n r-eqz5dr r-1ipicw7"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-puj83k"><div data-rnw-media-class="visible__hidden" class="css-1dbjc4n r-14lw9ot r-1d9grui r-qklmqi r-4dj0k7 r-1quu1zo r-18u37iz r-sga3zk r-17s6mgv"><div data-rnw-int-class="button___629_" tabindex="0" class="css-1dbjc4n r-1awozwy r-1kihuf0 r-42olwf r-z2wwpe r-rs99b7 r-1bnj018 r-1loqt21 r-18u37iz r-18kxxzh r-eu3ka r-1777fci r-1ny4l3l r-mk0yit r-1otgn73 r-1i6wzkk r-lrvibr r-1aockid" style="-webkit-transition-duration:0s;transition-duration:0s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___630-29615_" class="r-h7gdob" style="height:18px;vertical-align:middle;width:18px"><path d="M18 6L6 18M6 6l12 12"></path></svg></div></div><div class="css-1dbjc4n r-150rngu r-1ro0kt6 r-eqz5dr r-16y2uox r-1wbh5a2 r-11yh6sk r-1rnoaur r-1sncvnh"><div class="css-1dbjc4n r-1sc18lr r-1yzf0co"><div class="css-1dbjc4n"><a href="../docs_subdomain/index.html" data-rnw-media-class="1584__1585" data-rnw-int-class="nearest____" class="css-4rbku5 css-1dbjc4n r-1awozwy r-14lw9ot r-156hn8l r-rs99b7 r-1loqt21 r-18u37iz r-15ysp7h r-ymttw5 r-1otgn73 r-1i6wzkk r-lrvibr" style="-webkit-transition-duration:0s;transition-duration:0s"><div class="css-1dbjc4n r-88pszg"><div class="css-1dbjc4n r-1ghhsy9 r-4qtqp9 r-bnwqim" style="height:17.92px;width:17.92px"><span class="emj-symbols _26a0" role="img" title="warning" aria-label="warning" style="transform:translate(-50%, -50%) scale(0.28)">⚠</span></div></div><div dir="auto" class="css-901oao r-1ghhsy9 r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb r-5njf8e">Disclaimer</div></a></div><div class="css-1dbjc4n"><a href="../docs_subdomain/about.html" data-rnw-media-class="1584__1585" data-rnw-int-class="nearest__1586__" class="css-4rbku5 css-1dbjc4n r-1awozwy r-42olwf r-rs99b7 r-1loqt21 r-18u37iz r-15ysp7h r-ymttw5 r-1otgn73 r-1i6wzkk r-lrvibr" style="-webkit-transition-duration:0s;transition-duration:0s"><div class="css-1dbjc4n r-88pszg"><div class="css-1dbjc4n r-1bnj018 r-4qtqp9 r-bnwqim" style="height:17.92px;width:17.92px"><span class="emj-people _1f9d1-1f33e" role="img" title="farmer" aria-label="farmer" style="transform:translate(-50%, -50%) scale(0.28)">🧑🌾</span></div></div><div dir="auto" class="css-901oao r-1bnj018 r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb r-5njf8e">About</div></a></div><div class="css-1dbjc4n"><a href="../docs_subdomain/tokenomics.html" data-rnw-media-class="1584__1585" data-rnw-int-class="nearest__1586__" class="css-4rbku5 css-1dbjc4n r-1awozwy r-42olwf r-rs99b7 r-1loqt21 r-18u37iz r-15ysp7h r-ymttw5 r-1otgn73 r-1i6wzkk r-lrvibr" style="-webkit-transition-duration:0s;transition-duration:0s"><div class="css-1dbjc4n r-88pszg"><div class="css-1dbjc4n r-1bnj018 r-4qtqp9 r-bnwqim" style="height:17.92px;width:17.92px"><span class="emj-objects _1fa99" role="img" title="coin" aria-label="coin" style="transform:translate(-50%, -50%) scale(0.28)">🪙</span></div></div><div dir="auto" class="css-901oao r-1bnj018 r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb r-5njf8e">Tokenomics</div></a></div><div class="css-1dbjc4n"><a href="https://docs.binance.org/smart-chain/wallet/metamask.html" data-rnw-media-class="1584__1585" data-rnw-int-class="nearest__1586__" class="css-4rbku5 css-1dbjc4n r-1awozwy r-42olwf r-rs99b7 r-1loqt21 r-18u37iz r-15ysp7h r-ymttw5 r-1otgn73 r-1i6wzkk r-lrvibr" style="-webkit-transition-duration:0s;transition-duration:0s"><div dir="auto" class="css-901oao r-1bnj018 r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb r-5njf8e">How to Add BNB Network</div><div class="css-1dbjc4n r-1jkjb r-12zb1j4"><svg viewBox="0 0 16 16" fill="none" preserveAspectRatio="xMidYMid meet" class="r-1rasi3h" style="height:18px;vertical-align:middle;width:18px"><path fill-rule="evenodd" clip-rule="evenodd" d="M1 1.5a.5.5 0 01.5-.5H6v1H2v12h12v-4h1v4.5a.5.5 0 01-.5.5h-13a.5.5 0 01-.5-.5v-13zM9 1h5.5a.5.5 0 01.5.5V7h-1V2H9V1z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5.556 9.736l8.59-8.59.708.708-8.59 8.59-.708-.708z" fill="currentColor"></path></svg></div></a></div></div></div></div><div class="css-1dbjc4n r-1p0dtai r-u8s1d r-13qz1uu r-184en5c"><div class="css-1dbjc4n r-10ptun7" style="background-image:linear-gradient(3.141592653589793rad,#f5f7f900,#f5f7f9)"></div><div class="css-1dbjc4n r-1vckr1u r-1l7z4oj r-ymttw5"><a href="https://www.gitbook.com/" data-rnw-int-class="nearest___265-29621_" class="css-4rbku5 css-1dbjc4n r-1awozwy r-1b00too r-z2wwpe r-1loqt21 r-18u37iz r-ymttw5 r-5njf8e r-1otgn73 r-1i6wzkk r-lrvibr" style="-webkit-transition-duration:0s;transition-duration:0s"><svg viewBox="0 0 512 512" fill="none" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___265-29621_" class="r-1rasi3h r-eu3ka r-1aockid" style="vertical-align:middle"><path d="M233.426 365.348c7.069 0 13.431 5.676 13.431 13.481 0 7.094-5.655 13.48-13.431 13.48-7.068 0-13.43-5.676-13.43-13.48 0-7.805 6.362-13.481 13.43-13.481zm207.824-82.299c-7.069 0-13.431-5.676-13.431-13.481 0-7.094 5.655-13.48 13.431-13.48 7.069 0 13.43 5.676 13.43 13.48 0 7.095-6.361 13.481-13.43 13.481zm0-54.63c-22.621 0-40.999 18.446-40.999 41.149 0 4.257.706 8.514 2.12 12.771l-135.014 72.367c-7.776-11.351-20.5-17.737-33.931-17.737-15.551 0-29.689 9.223-36.757 22.704L75.085 295.819c-12.724-7.095-22.62-27.67-21.206-47.535.706-9.933 4.24-17.737 9.189-20.575 3.534-2.128 7.069-1.419 12.017.71 32.516 17.027 138.549 73.076 142.79 75.205 7.069 2.837 10.603 4.256 22.62-1.419l217.72-113.517c3.534-1.419 7.069-4.257 7.069-9.224 0-6.385-6.362-9.223-6.362-9.223-12.724-5.676-31.81-14.899-50.189-23.413-39.585-18.446-84.826-39.731-104.618-50.373-16.966-9.223-31.103-1.42-33.224 0-89.774 45.407-213.478 106.422-220.547 110.679-12.017 7.095-19.793 21.994-20.5 40.441-1.413 29.088 13.431 59.596 34.638 70.238l128.652 66.691c2.828 19.866 20.5 35.475 40.292 35.475 22.621 0 40.293-17.738 41-40.441l141.376-76.624c7.069 5.676 16.258 8.514 25.448 8.514 22.62 0 40.999-18.447 40.999-41.15 0-23.413-18.379-41.859-40.999-41.859z" fill="currentColor"></path></svg><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1qhn6m8"><div dir="auto" data-rnw-int-class="nearest___265-29621_" class="css-901oao r-1rasi3h r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb">Powered By <span class="css-901oao css-16my406 r-b88u0q">GitBook</span></div></div></a></div></div></div></div><div class="css-1dbjc4n r-14lw9ot r-13awgt0"><div class="css-1dbjc4n r-150rngu r-1ro0kt6 r-eqz5dr r-16y2uox r-1wbh5a2 r-11yh6sk r-1rnoaur r-1sncvnh"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-8jnfel"><div class="css-1dbjc4n r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2"><div data-rnw-media-class="__" class="css-1dbjc4n r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-1777fci"><div class="css-1dbjc4n r-1ro0kt6 r-eqz5dr r-16y2uox r-1wbh5a2"><div data-rnw-media-class="1557__1556_b1430-195" class="css-1dbjc4n r-18u37iz r-1777fci"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1l5ssaz"><div class="css-1dbjc4n r-eqz5dr r-1ifxtd0 r-1ygmrgt"><div class="css-1dbjc4n r-18u37iz"><div data-rnw-media-class="1529__1530" class="css-1dbjc4n r-1awozwy r-18u37iz r-17s6mgv"><div class="css-1dbjc4n r-ymttw5"><div class="css-1dbjc4n r-4qtqp9 r-bnwqim" style="height:24.32px;width:24.32px"><span class="emj-symbols _26a0" role="img" title="warning" aria-label="warning" style="transform:translate(-50%, -50%) scale(0.38)">⚠</span></div></div></div><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2"><div dir="auto" data-rnw-media-class="232__230" class="css-901oao r-1nf4jbm r-1xnzce8" data-testid="page.title">Disclaimer</div></div><div data-rnw-media-class="visible__hidden_b1430-visible" class="css-1dbjc4n r-1awozwy r-18u37iz"><div aria-label="Page actions" data-rnw-int-class="button___760_" tabindex="0" class="css-1dbjc4n r-1awozwy r-42olwf r-18c69zk r-rs99b7 r-1bnj018 r-1loqt21 r-18u37iz r-18kxxzh r-eu3ka r-1777fci r-1ny4l3l r-mk0yit r-1otgn73 r-1i6wzkk r-lrvibr r-1aockid" style="-webkit-transition-duration:0s;transition-duration:0s" data-testid="pageCompactToolbar.paletteButton"><svg viewBox="0 0 16 16" fill="none" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___762_" class="r-h7gdob" style="height:18px;vertical-align:middle;width:18px"><path d="M8 4a1 1 0 100-2 1 1 0 000 2zM8 8.75a1 1 0 100-2 1 1 0 000 2zM8 13.5a1 1 0 100-2 1 1 0 000 2z" fill="currentColor"></path></svg></div></div></div><div data-rnw-media-class="1532__1531" class="css-1dbjc4n r-1wzrnnt"><div class="css-1dbjc4n"><div dir="auto" class="css-901oao r-1rasi3h r-gg6oyi r-ubezar r-16dba41 r-135wba7 r-1xnzce8">Please read the disclaimer below before proceeding!</div></div></div><div data-rnw-media-class="1532__1531" class="css-1dbjc4n r-nzcix3 r-qklmqi r-11c0sde"></div></div></div></div><div data-rnw-media-class="__127" class="css-1dbjc4n"><div class="css-1dbjc4n r-bnwqim"><div tabindex="0" class="css-1dbjc4n r-1dqbpge r-eu3ka r-1d2f490 r-u8s1d r-zchlnj r-1sdbnja"></div><div data-testid="page.contentEditor" data-slate-editor="true" data-key="9ca7b53348b44f71be9db6a0f6e6d038" autoCorrect="on" spellcheck="true" data-gramm="false" style="outline:none;white-space:pre-wrap;word-wrap:break-word"><div style="content-visibility:auto;contain-intrinsic-size:0 488px"><div data-rnw-media-class="1491-195__1489-_b1430-195" class="css-1dbjc4n r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-1777fci"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1l5ssaz"><div data-rnw-media-class="1490-__1488" class="css-1dbjc4n"><div class="css-1dbjc4n"><div data-key="c4ff33d4b10a48b2af255fb383b447fd" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1mlwlqe r-eqz5dr r-1q142lx r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-1l7z4oj r-95jzfe r-1yzf0co r-bnwqim r-417010"><div data-block-content="c4ff33d4b10a48b2af255fb383b447fd" class="r-1oszu61 r-1vckr1u r-119zq30 r-z2wwpe r-1phboty r-1yadl64 r-deolkf r-6koalj r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-11g3r6m r-bnwqim r-13qz1uu r-417010" style="border-top-color:rgba(52,109,219,1.00);border-right-color:rgba(52,109,219,1.00);border-bottom-color:rgba(52,109,219,1.00);border-left-color:rgba(52,109,219,1.00)"><div class="css-1dbjc4n r-18u37iz r-1777fci r-rwqe4o" style="padding-top:18px"><svg viewBox="0 0 16 16" fill="none" preserveAspectRatio="xMidYMid meet" class="r-1ghhsy9" style="height:20px;vertical-align:middle;width:20px"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 1a7 7 0 100 14A7 7 0 008 1zM0 8a8 8 0 1116 0A8 8 0 010 8z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 6.37H8a.5.5 0 01.5.5v5.5h-1v-5h-1v-1z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 12.37h-3v-1h3v1z" fill="currentColor"></path><path d="M7.74 5.16a.77.77 0 01-.76-.77.76.76 0 011.52 0 .77.77 0 01-.76.77z" fill="currentColor"></path></svg></div><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2"><div class="css-1dbjc4n"><div data-key="acc52a24fc6c4004bdb22f5e2acd7854" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1mlwlqe r-eqz5dr r-1q142lx r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-iphfwy r-95jzfe r-1yzf0co r-bnwqim r-417010"><div data-block-content="acc52a24fc6c4004bdb22f5e2acd7854" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1ro0kt6 r-eqz5dr r-16y2uox r-1wbh5a2 r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-bnwqim r-417010"><div dir="auto" class="css-901oao r-1nf4jbm r-gg6oyi r-ubezar r-16dba41 r-135wba7 r-fdjqy7 r-1xnzce8"><span data-key="aba9df03eed8403b864a82a7368b6849"><strong data-slate-leaf="true" data-offset-key="aba9df03eed8403b864a82a7368b6849:0" class="r-b88u0q">Disclaimer:</strong><span data-offset-key="aba9df03eed8403b864a82a7368b6849:1"> The information contained in this material does not represent any form of financial investment advice, it is for informational purposes ONLY and is not intended to provide accounting, legal, or tax advice, or investment recommendations. There is no express or implicit promise or assurance made as to the accuracy or completeness of the information, or the future performance of any digital asset including Farmers.</span></span></div></div></div></div><div class="css-1dbjc4n"><div data-key="da7e3c7b56d24442bc1afb8b7d2018fe" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1mlwlqe r-eqz5dr r-1q142lx r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-iphfwy r-1h8ys4a r-1yzf0co r-bnwqim r-417010"><div data-block-content="da7e3c7b56d24442bc1afb8b7d2018fe" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1ro0kt6 r-eqz5dr r-16y2uox r-1wbh5a2 r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-bnwqim r-417010"><div dir="auto" class="css-901oao r-1nf4jbm r-gg6oyi r-ubezar r-16dba41 r-135wba7 r-fdjqy7 r-1xnzce8"><span data-key="3dd39f6253ac490698bc02c1024f353e"><span data-offset-key="3dd39f6253ac490698bc02c1024f353e:0">The farmer team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own research diligently and consult your financial advisor before making any investment decisions. You agree to hold the team blameless and not liable for any damages experienced or taxes you may incur by acquiring crypto or dealing monetarily with the farmer project. You also acknowledge that the team is providing the contract and DAO &quot;as is&quot;, with no obligation to offer support or services. </span></span></div></div></div></div><div class="css-1dbjc4n"><div data-key="674fa09b702f42798c5502ec5af9c0ca" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1mlwlqe r-eqz5dr r-1q142lx r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-1l7z4oj r-1h8ys4a r-1yzf0co r-bnwqim r-417010"><div data-block-content="674fa09b702f42798c5502ec5af9c0ca" class="r-1oszu61 r-1xc7w19 r-1phboty r-1yadl64 r-deolkf r-6koalj r-1ro0kt6 r-eqz5dr r-16y2uox r-1wbh5a2 r-crgep1 r-ifefl9 r-bcqeeo r-t60dpp r-bnwqim r-417010"><div dir="auto" class="css-901oao r-1nf4jbm r-gg6oyi r-ubezar r-16dba41 r-135wba7 r-fdjqy7 r-1xnzce8"><span data-key="69055aaf009443aeaa592bdbf3e06611"><span data-offset-key="69055aaf009443aeaa592bdbf3e06611:0">Farmer Financial and its personnel should not be expected to provide any kind of service except when willingly rendered. While multifarmer is a Decentralized Autonomous Organization and not a registered digital currency, the team strongly recommends that citizens in areas with government bans on cryptocurrencies do not purchase it because the team cannot ensure compliance with established regulations within certain territories. Always make sure that you comply with your local laws and regulations before you make any purchase. </span></span></div></div></div></div></div></div></div></div></div></div></div></div></div><div tabindex="0" class="css-1dbjc4n r-1p5i0ed r-1dqbpge r-1472mwg r-1d2f490 r-u8s1d r-zchlnj"></div></div><div data-rnw-media-class="1557__1556_b1430-195" class="css-1dbjc4n r-18u37iz r-1777fci"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2 r-1l5ssaz"><div data-rnw-media-class="1560__1559" class="css-1dbjc4n"><div data-rnw-media-class="__187_b910-188" class="css-1dbjc4n r-11c0sde"><a href="../docs_subdomain/about.html" data-rnw-media-class="__" data-rnw-int-class="nearest___906-29625_" class="css-4rbku5 css-1dbjc4n r-1awozwy r-14lw9ot r-190qawg r-z2wwpe r-rs99b7 r-4dj0k7 r-1loqt21 r-1quu1zo r-1ro0kt6 r-18u37iz r-16y2uox r-1wbh5a2 r-nsbfu8 r-1otgn73 r-1i6wzkk r-lrvibr" style="-webkit-transition-duration:0s;transition-duration:0s"><div class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2"><div class="css-1dbjc4n"><div dir="auto" class="css-901oao r-1rasi3h r-gg6oyi r-1enofrn r-16dba41 r-14yzgew">Next</div></div><div dir="auto" data-rnw-int-class="nearest___265-29611_" class="css-901oao css-vcwn7f r-1nf4jbm r-gg6oyi r-ubezar r-majxgm r-135wba7">About</div></div><div class="css-1dbjc4n r-1ow6zhx"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest__265-29611__" class="r-1rasi3h r-1472mwg" style="vertical-align:middle;width:24px"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></div></a></div><div class="css-1dbjc4n r-1yv4afn r-5kkj8d r-11c0sde r-1ygmrgt"><div data-rnw-media-class="_188_187" class="css-1dbjc4n r-1awozwy r-1wtj0ep"><div data-rnw-media-class="_162_" class="css-1dbjc4n r-1ro0kt6 r-16y2uox r-1wbh5a2"><div dir="auto" class="css-901oao r-1rasi3h r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb">Last modified <span aria-label="2022-04-15 13:10 UTC" class="css-901oao css-16my406">2mo ago</span></div></div></div></div></div></div></div></div></div></div><div data-rnw-media-class="hidden__1kbfcbz_b1430-hidden" class="css-1dbjc4n r-k200y r-pw2am6 r-icyqz7 r-1mkpi1y r-1rnoaur r-1h4fu65 r-gtdqiz r-eqo98v" data-testid="page.outline"><div class="css-1dbjc4n r-dvzwsg r-1ljd8xs r-1peese0 r-hu79xy"><div class="css-1dbjc4n r-1mdbw0j r-wk8lta"><div data-rnw-int-class="nearest____" tabindex="0" class="css-1dbjc4n r-1awozwy r-1loqt21 r-18u37iz r-dnmrzs r-1guathk r-oyd9sg r-1otgn73 r-1i6wzkk r-lrvibr r-7xmw5f" style="-webkit-transition-duration:0s;transition-duration:0s"><div class="css-1dbjc4n r-1kb76zh"><svg viewBox="0 0 16 16" fill="none" preserveAspectRatio="xMidYMid meet" data-rnw-int-class="nearest___265-29611_" class="r-1rasi3h r-10ptun7" style="vertical-align:middle;width:16px"><path d="M14.11 6.6l-.16-.09c-.042.343-.13.68-.26 1A3 3 0 0115 10a3 3 0 01-3 3H8a3 3 0 010-6h.82A3 3 0 009 6H8a4 4 0 000 8h4a4 4 0 002.11-7.4z" fill="currentColor"></path><path d="M1.89 9.4l.16.09c.042-.343.13-.68.26-1A3 3 0 011 6a3 3 0 013-3h4a3 3 0 110 6h-.82A3 3 0 007 10h1a4 4 0 000-8H4a4 4 0 00-2.11 7.4z" fill="currentColor"></path></svg></div><div dir="auto" data-rnw-int-class="nearest___265-29611_" class="css-901oao css-vcwn7f r-1bnj018 r-1ro0kt6 r-16y2uox r-1wbh5a2 r-gg6oyi r-1b43r93 r-16dba41 r-hbpseb">Copy link</div></div></div></div></div></div></div></div></div></div></div></div></div>
+        <script>
+            // Rendered with GitBook 10.9.126-a8a079a6410185f987dda278b997d1d1a5e404f6-2662881105
+            // Space a3vNIresE1y5ZNLGwo8X
+            window.__GITBOOK_WAS_SSR = true;
+            window.__GITBOOK_INITIAL_PROPS__ = "{\"hostname\":\"docs.bnbfarmer.io\",\"basePath\":\"\",\"assetHostname\":\"https://app.gitbook.com\",\"space\":{\"orderIndex\":\"0|i00076:\",\"duplicatingFrom\":null,\"defaultPermission\":\"inherit\",\"lastUpdatedBy\":\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\",\"draftChangeRequests\":0,\"createdAt\":{\"seconds\":1649205890,\"nanoseconds\":922000000},\"revision\":\"olwIOFoBLHUhrH8aGC8H\",\"path\":\"bnbfarmer.io\",\"changeRequests\":8,\"user\":\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\",\"visibility\":\"unlisted\",\"edits\":{\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\":{\"count\":1,\"updatedAt\":{\"seconds\":1649205890,\"nanoseconds\":920000000}}},\"searchKeyVersion\":1,\"createdBy\":\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\",\"inheritCustomization\":false,\"title\":\"bnbfarmer.io\",\"comments\":{},\"iconURL\":\"https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fa3vNIresE1y5ZNLGwo8X%2Ficon%2FMypH43mBJij3wiKZSO13%2Fbnbfarmer256.png?alt=media&token=1a75a615-c960-4df3-b161-d05528e3289c\",\"editMode\":\"locked\",\"indexedRevision\":\"olwIOFoBLHUhrH8aGC8H\",\"searchKey\":\"YjUxNDVhNTI3NWU5OTU5NThkNjdhNzY1MDEzNzExMzczZDAxMDdhOGMxNGU5NmE0YjRjNDQ2MzgxZDBjY2M3OGZpbHRlcnM9KHZpZXdhYmxlQnlQdWJsaWNTcGFjZXMlM0FhM3ZOSXJlc0UxeTVaTkxHd284WC0xKSUyMEFORCUyMHByb2plY3RJZCUzQWdpdGJvb2steC1wcm9k\",\"key\":\"a3vNIresE1y5ZNLGwo8X\",\"customHostname\":\"docs.bnbfarmer.io\"}}";
+            window.__GITBOOK_INITIAL_STATE__ = "{\"firestore\":{\"spaces/a3vNIresE1y5ZNLGwo8X/revisions/olwIOFoBLHUhrH8aGC8H\":{\"key\":\"olwIOFoBLHUhrH8aGC8H\",\"space\":\"a3vNIresE1y5ZNLGwo8X\",\"activeAt\":{\"__type\":\"timestamp\",\"seconds\":1650233285,\"nanoseconds\":355000000},\"pages\":{\"GHW6TXeYmvEsdke3zcC4\":{\"description\":\"Background and Contract Functionality\",\"sheet\":\"oAAOczneuhZyeG2XdUbI\",\"edits\":{\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\":{\"count\":4,\"updatedAt\":{\"__type\":\"timestamp\",\"seconds\":1649206051,\"nanoseconds\":755000000}}},\"key\":\"GHW6TXeYmvEsdke3zcC4\",\"emoji\":\"1f9d1-1f33e\",\"kind\":\"sheet\",\"title\":\"About\",\"pages\":{\"__type\":\"array\"}},\"IoVi1T7pk4ZdbUKesJL1\":{\"kind\":\"sheet\",\"edits\":{\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\":{\"updatedAt\":{\"__type\":\"timestamp\",\"seconds\":1650233285,\"nanoseconds\":233000000},\"count\":5}},\"description\":\"\",\"emoji\":\"1fa99\",\"key\":\"IoVi1T7pk4ZdbUKesJL1\",\"pages\":{\"__type\":\"array\"},\"title\":\"Tokenomics\",\"sheet\":\"zM1itOxDk1da4zDE626V\"},\"pAI9PDsjC4fdbJTYj4JW\":{\"edits\":{\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\":{\"count\":1,\"updatedAt\":{\"__type\":\"timestamp\",\"seconds\":1649301929,\"nanoseconds\":219000000}}},\"ref\":{\"kind\":\"url\",\"url\":\"https://docs.binance.org/smart-chain/wallet/metamask.html\"},\"kind\":\"link\",\"key\":\"pAI9PDsjC4fdbJTYj4JW\",\"title\":\"How to Add BNB Network\"},\"EG8ZAqoCaYGv67b3SrJi\":{\"kind\":\"sheet\",\"description\":\"Please read the disclaimer below before proceeding!\",\"title\":\"Disclaimer\",\"pages\":{\"__type\":\"array\"},\"emoji\":\"26a0\",\"sheet\":\"r9t6nCzBpXJ4wpi2VzKc\",\"edits\":{\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\":{\"count\":3,\"updatedAt\":{\"__type\":\"timestamp\",\"seconds\":1650028242,\"nanoseconds\":993000000}}},\"key\":\"EG8ZAqoCaYGv67b3SrJi\"}},\"files\":{\"OsccgFBIs1xyz6mW7wSp\":{\"dimensions\":{\"width\":32,\"height\":32},\"name\":\"image.png\",\"size\":2031,\"edits\":{\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\":{\"updatedAt\":{\"__type\":\"timestamp\",\"seconds\":1649205890,\"nanoseconds\":920000000},\"count\":1}},\"key\":\"OsccgFBIs1xyz6mW7wSp\",\"contentType\":\"image/png\",\"downloadURL\":\"https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fa3vNIresE1y5ZNLGwo8X%2Fuploads%2FHp68Bbn4F7MsFTJppB7O%2Fimage.png?alt=media&token=d9f86481-da3b-4b1d-a7e1-d57455c608cb\"}},\"rootPages\":[\"EG8ZAqoCaYGv67b3SrJi\",\"GHW6TXeYmvEsdke3zcC4\",\"IoVi1T7pk4ZdbUKesJL1\",\"pAI9PDsjC4fdbJTYj4JW\"],\"type\":\"merge\",\"parents\":[\"MUmti34G3ButgHcQlmM0\",\"Pq06eCTjoQwQz6EnqypA\"],\"createdAt\":{\"__type\":\"timestamp\",\"seconds\":1650233285,\"nanoseconds\":355000000},\"edits\":{\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\":{\"count\":1,\"updatedAt\":{\"__type\":\"timestamp\",\"seconds\":1650233285,\"nanoseconds\":355000000}}},\"mergedFrom\":\"gBT7P9IZYOXY8Oh7pHDc\",\"changeRequest\":{\"__type\":\"null\"}},\"spaces/a3vNIresE1y5ZNLGwo8X/sheets/r9t6nCzBpXJ4wpi2VzKc\":{\"previous\":\"MNz1LDApru7aR9OOSKkj\",\"page\":\"EG8ZAqoCaYGv67b3SrJi\",\"revision\":\"y6FWoaDQaZUG9a4VqMlE\",\"edits\":{\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\":{\"count\":1,\"updatedAt\":{\"__type\":\"timestamp\",\"seconds\":1650028242,\"nanoseconds\":992000000}}},\"key\":\"r9t6nCzBpXJ4wpi2VzKc\",\"body\":{\"__type\":\"blob\",\"buffer\":\"CiA5Y2E3YjUzMzQ4YjQ0ZjcxYmU5ZGI2YTBmNmU2ZDAzOBKuDgogYzRmZjMzZDRiMTBhNDhiMmFmMjU1ZmIzODNiNDQ3ZmQSBGhpbnQalwQalAQKIGFjYzUyYTI0ZmM2YzQwMDRiZGIyMmY1ZTJhY2Q3ODU0EglwYXJhZ3JhcGga4gMS3wMKIGFiYTlkZjAzZWVkODQwM2I4NjRhODJhNzM2OGI2ODQ5EhUKC0Rpc2NsYWltZXI6EgYKBGJvbGQSowMKoAMgVGhlIGluZm9ybWF0aW9uIGNvbnRhaW5lZCBpbiB0aGlzIG1hdGVyaWFsIGRvZXMgbm90IHJlcHJlc2VudCBhbnkgZm9ybSBvZiBmaW5hbmNpYWwgaW52ZXN0bWVudCBhZHZpY2UsIGl0IGlzIGZvciBpbmZvcm1hdGlvbmFsIHB1cnBvc2VzIE9OTFkgYW5kIGlzIG5vdCBpbnRlbmRlZCB0byBwcm92aWRlIGFjY291bnRpbmcsIGxlZ2FsLCBvciB0YXggYWR2aWNlLCBvciBpbnZlc3RtZW50IHJlY29tbWVuZGF0aW9ucy4gVGhlcmUgaXMgbm8gZXhwcmVzcyBvciBpbXBsaWNpdCBwcm9taXNlIG9yIGFzc3VyYW5jZSBtYWRlIGFzIHRvIHRoZSBhY2N1cmFjeSBvciBjb21wbGV0ZW5lc3Mgb2YgdGhlIGluZm9ybWF0aW9uLCBvciB0aGUgZnV0dXJlIHBlcmZvcm1hbmNlIG9mIGFueSBkaWdpdGFsIGFzc2V0IGluY2x1ZGluZyBGYXJtZXJzLjAAGt8EGtwECiBkYTdlM2M3YjU2ZDI0NDQyYmMxYWZiOGI3ZDIwMThmZRIJcGFyYWdyYXBoGqoEEqcECiAzZGQzOWY2MjUzYWM0OTA2OThiYzAyYzEwMjRmMzUzZRKCBAr/A1RoZSBmYXJtZXIgdGVhbSBkb2VzIG5vdCByZWNvbW1lbmQgdGhhdCBhbnkgY3J5cHRvY3VycmVuY3kgc2hvdWxkIGJlIGJvdWdodCwgc29sZCwgb3IgaGVsZCBieSB5b3UuIERvIGNvbmR1Y3QgeW91ciBvd24gcmVzZWFyY2ggZGlsaWdlbnRseSBhbmQgY29uc3VsdCB5b3VyIGZpbmFuY2lhbCBhZHZpc29yIGJlZm9yZSBtYWtpbmcgYW55IGludmVzdG1lbnQgZGVjaXNpb25zLiBZb3UgYWdyZWUgdG8gaG9sZCB0aGUgdGVhbSBibGFtZWxlc3MgYW5kIG5vdCBsaWFibGUgZm9yIGFueSBkYW1hZ2VzIGV4cGVyaWVuY2VkIG9yIHRheGVzIHlvdSBtYXkgaW5jdXIgYnkgYWNxdWlyaW5nIGNyeXB0byBvciBkZWFsaW5nIG1vbmV0YXJpbHkgd2l0aCB0aGUgZmFybWVyIHByb2plY3QuIFlvdSBhbHNvIGFja25vd2xlZGdlIHRoYXQgdGhlIHRlYW0gaXMgcHJvdmlkaW5nIHRoZSBjb250cmFjdCBhbmQgREFPICJhcyBpcyIsIHdpdGggbm8gb2JsaWdhdGlvbiB0byBvZmZlciBzdXBwb3J0IG9yIHNlcnZpY2VzLiAwABr0BBrxBAogNjc0ZmEwOWI3MDJmNDI3OThjNTUwMmVjNWFmOWMwY2ESCXBhcmFncmFwaBq/BBK8BAogNjkwNTVhYWYwMDk0NDNhZWFhNTkyYmRiZjNlMDY2MTESlwQKlARGYXJtZXIgRmluYW5jaWFsIGFuZCBpdHMgcGVyc29ubmVsIHNob3VsZCBub3QgYmUgZXhwZWN0ZWQgdG8gcHJvdmlkZSBhbnkga2luZCBvZiBzZXJ2aWNlIGV4Y2VwdCB3aGVuIHdpbGxpbmdseSByZW5kZXJlZC4gV2hpbGUgbXVsdGlmYXJtZXIgaXMgYSBEZWNlbnRyYWxpemVkIEF1dG9ub21vdXMgT3JnYW5pemF0aW9uIGFuZCBub3QgYSByZWdpc3RlcmVkIGRpZ2l0YWwgY3VycmVuY3ksIHRoZSB0ZWFtIHN0cm9uZ2x5IHJlY29tbWVuZHMgdGhhdCBjaXRpemVucyBpbiBhcmVhcyB3aXRoIGdvdmVybm1lbnQgYmFucyBvbiBjcnlwdG9jdXJyZW5jaWVzIGRvIG5vdCBwdXJjaGFzZSBpdCBiZWNhdXNlIHRoZSB0ZWFtIGNhbm5vdCBlbnN1cmUgY29tcGxpYW5jZSB3aXRoIGVzdGFibGlzaGVkIHJlZ3VsYXRpb25zIHdpdGhpbiBjZXJ0YWluIHRlcnJpdG9yaWVzLiBBbHdheXMgbWFrZSBzdXJlIHRoYXQgeW91IGNvbXBseSB3aXRoIHlvdXIgbG9jYWwgbGF3cyBhbmQgcmVndWxhdGlvbnMgYmVmb3JlIHlvdSBtYWtlIGFueSBwdXJjaGFzZS4gMAAqDwoFc3R5bGUSBiJpbmZvIjAAGhIKDXNjaGVtYVZlcnNpb24SATQ=\"}},\"\":{\"__type\":\"null\"},\"spaces/a3vNIresE1y5ZNLGwo8X\":{\"orderIndex\":\"0|i00076:\",\"duplicatingFrom\":{\"__type\":\"null\"},\"defaultPermission\":\"inherit\",\"lastUpdatedBy\":\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\",\"draftChangeRequests\":0,\"createdAt\":{\"__type\":\"timestamp\",\"seconds\":1649205890,\"nanoseconds\":922000000},\"revision\":\"olwIOFoBLHUhrH8aGC8H\",\"path\":\"bnbfarmer.io\",\"changeRequests\":8,\"user\":\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\",\"visibility\":\"unlisted\",\"edits\":{\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\":{\"count\":1,\"updatedAt\":{\"__type\":\"timestamp\",\"seconds\":1649205890,\"nanoseconds\":920000000}}},\"searchKeyVersion\":1,\"createdBy\":\"ZuYWnqdhHcWOB1tDa9wlryVXXC82\",\"inheritCustomization\":false,\"title\":\"bnbfarmer.io\",\"comments\":{\"__type\":\"object\"},\"iconURL\":\"https://firebasestorage.googleapis.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2Fa3vNIresE1y5ZNLGwo8X%2Ficon%2FMypH43mBJij3wiKZSO13%2Fbnbfarmer256.png?alt=media&token=1a75a615-c960-4df3-b161-d05528e3289c\",\"editMode\":\"locked\",\"indexedRevision\":\"olwIOFoBLHUhrH8aGC8H\",\"searchKey\":\"YjUxNDVhNTI3NWU5OTU5NThkNjdhNzY1MDEzNzExMzczZDAxMDdhOGMxNGU5NmE0YjRjNDQ2MzgxZDBjY2M3OGZpbHRlcnM9KHZpZXdhYmxlQnlQdWJsaWNTcGFjZXMlM0FhM3ZOSXJlc0UxeTVaTkxHd284WC0xKSUyMEFORCUyMHByb2plY3RJZCUzQWdpdGJvb2steC1wcm9k\",\"key\":\"a3vNIresE1y5ZNLGwo8X\",\"customHostname\":\"docs.bnbfarmer.io\"}},\"head\":{\"3a98e13f\":{\"type\":\"font\",\"font\":\"Inter\",\"fontFamilyName\":\"gitbook-content-font\"},\"19d2d708\":{\"type\":\"meta\",\"name\":\"description\",\"content\":\"Please read the disclaimer below before proceeding!\"},\"f27fc974\":{\"type\":\"meta\",\"name\":\"og:description\",\"content\":\"Please read the disclaimer below before proceeding!\"},\"4e90d7b5\":{\"type\":\"meta\",\"name\":\"og:image\",\"content\":\"https://app.gitbook.com/share/space/thumbnail/a3vNIresE1y5ZNLGwo8X.png?color=&logo=https%3A%2F%2F97799430-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252Fa3vNIresE1y5ZNLGwo8X%252Ficon%252FMypH43mBJij3wiKZSO13%252Fbnbfarmer256.png%3Falt%3Dmedia%26token%3D1a75a615-c960-4df3-b161-d05528e3289c&theme=\"},\"78c65e0e\":{\"type\":\"meta\",\"name\":\"twitter:card\",\"content\":\"summary_large_image\"},\"83670eb0\":{\"type\":\"meta\",\"name\":\"og:title\",\"content\":\"Disclaimer\"},\"3457bca1\":{\"type\":\"meta\",\"name\":\"twitter:site\",\"content\":\"bnbfarmer.io\"},\"2551a683\":{\"type\":\"meta\",\"name\":\"robots\",\"content\":\"noindex, nofollow\"},\"a99c2f76\":{\"type\":\"link\",\"rel\":\"icon\",\"href\":\"../images/MypH43mBJij3wiKZSO13/bnbfarmer256.png\"},\"04a8fb76\":{\"type\":\"link\",\"rel\":\"stylesheet\",\"href\":\"../public/emojis/emoji-assets-sprite.css\"}},\"images\":{\"sizes\":{},\"uri\":[]},\"contentURLs\":{\"87ea4b32\":{\"hostname\":\"docs.bnbfarmer.io\",\"pathname\":\"\"}},\"contentRefs\":{\"3cc4bdcd\":[{\"text\":\"https://docs.binance.org/smart-chain/wallet/metamask.html\",\"target\":\"https://docs.binance.org/smart-chain/wallet/metamask.html\"},[],false]},\"screenToContentRefs\":{},\"swaggers\":{}}";
+            window.__GITBOOK_INITIAL_RENDER__ = true;
+            window.__GITBOOK_INITIAL_STATE_COMPRESSED__ = false;
+            window.__GITBOOK_LAZY_MODULES__ = [];
+        </script>
+    </body>
+</html>
